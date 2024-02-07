@@ -1,0 +1,48 @@
+.watch-games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch-games .watch-games-container {
+  width: 64%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10%;
+  padding: 20px;
+}
+.watch-games .watch-games-container .game-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  background-color: #e4e1dd;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.032),
+    0 32px 64px -48px rgba(0, 0, 0, 0.068);
+  transition: 0.4s ease-in-out;
+}
+.watch-games .watch-games-container .game-card figure img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.watch-games .watch-games-container .game-card p {
+  font-size: 1.5rem;
+  font-weight: 540;
+}
+.watch-games .watch-games-container a {
+  text-decoration: none;
+  color: #4f4840;
+}
+.watch-games .watch-games-container .game-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.watch-games .watch-games-container .game-card:active {
+  transform: scale(0.9) translateY(-3px);
+}
