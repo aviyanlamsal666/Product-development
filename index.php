@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+include './connection.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +20,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script
+      src="https://kit.fontawesome.com/07c150b60f.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
   <?php
@@ -84,6 +91,8 @@
     </div>
   </section>
 
+  <div id="toastBox"></div>
+
   <?php
     require('footer.php')
   ?>
@@ -93,6 +102,7 @@
     	offset: 300, duration: 1200
     });
   </script>
+ 
   <script src="scripts/common.js"></script>
   <script src="https://cdn.logwork.com/widget/countdown.js"></script>
   <script src="scripts/cards.js"></script>

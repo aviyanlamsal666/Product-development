@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+include './connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +28,7 @@
 ?>
 
     <section class="chatbox-section">
-      <h2 style="margin-bottom: 30px; text-align: left; width: 50%">Watch the Archery Match Live Here</h2>
+      <h2 style="margin-bottom: 30px; text-align: left; width: 50%">Browse the Archery Match Live Here</h2>
       <div class="chatbox-container">
         <div class="video">
            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/B5odGY2JRzI?si=YC1coSLJYJjjtOth&amp;start=521" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
@@ -38,7 +41,7 @@
           <input
             type="text"
             id="message-input"
-            placeholder="Type your message here..."
+            placeholder="Type your comment here..."
           />
           <button type="submit"><i class='bx bxs-send'></i></button>
         </form>

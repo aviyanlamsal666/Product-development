@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,13 +30,13 @@
     <h2 class="h2" data-aos="zoom-in-up" style="margin-top: 40px; font-size: 2.4rem; text-align: center; margin-bottom: -6%;">BROWSE GAMES LIVE</h2>
 
   </section>
+        <section class="watch-games">
+          <div class="watch-games-container js-browse-games">
+        
+            </div>
+        
+          </section>
 
-  <section class="watch-games">
-    <div class="watch-games-container js-browse-games">
-
-    </div>
-
-  </section>
 
   <?php
     require('footer.php')

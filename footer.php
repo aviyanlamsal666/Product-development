@@ -5,7 +5,7 @@
       <div class="white-logo">
         <figure><img src="images/logo-white.png" alt="White Logo"/></figure>
       </div>
-      <section class="footer-list" id="js-footer-list" data-aos="zoom-in-up">
+      <section class="footer-list" id="js-footer-list" >
 
       </section>
 

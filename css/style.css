@@ -6,14 +6,13 @@
   list-style: none;
   border: none;
   outline: none;
-  scroll-behavior: smooth;
   font-family: "Work Sans", sans-serif;
+  scrollbar-width: none;
 }
 :root {
   --h1-font: 5rem;
   --h2-font: 2.9rem;
   --p-font: 1.1rem;
-
   --bg-color: #e4e1dd;
   --text-color: #4f4840;
   --main-color: #a58f70;
@@ -24,6 +23,7 @@ body {
   color: var(--text-color);
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 header {
   width: 100%;
@@ -571,4 +571,155 @@ footer {
 
 .copy-right p {
   color: #ae9e8e;
+}
+.signinForm-Container {
+  background: #fff;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.316);
+}
+.signinForm-Container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 20px;
+  gap: 32px;
+}
+.signinForm-Container form .formControl {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.signinForm-Container form input {
+  background: #dddddd6d;
+  outline: none;
+  border: none;
+  border: 8px;
+  font-size: 20px;
+  padding: 10px 8px;
+  border-radius: 5px;
+  width: 100%;
+}
+.signinForm-Container form .formControl i {
+  position: absolute;
+  right: 8px;
+  bottom: 14px;
+  cursor: pointer;
+}
+.signinForm-Container form button {
+  padding: 14px 10px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #a58f70;
+  color: #ddd;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.userInfo img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.signoutToggle {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 82%);
+  padding: 8px;
+  margin-left: 8px;
+  margin-top: 8px;
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+.signoutToggle li {
+  width: 100%;
+  margin: 0 auto;
+}
+.signoutToggle li a {
+  text-align: center;
+  margin: 0 auto;
+  color: var(--text-color);
+  font-weight: bold;
+}
+#toastBox {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+.toast {
+  width: 400px;
+  height: 80px;
+  background-color: #fff;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+@keyframes moveleft {
+  100% {
+    transform: translateX(0);
+  }
+}
+.toast i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+.toast.signin i {
+  color: orange;
+}
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: green;
+  animation: anim 5s linear forwards;
+}
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
+.toast.error::after {
+  background: red;
+}
+.toast.invalid::after {
+  background: orange;
 }

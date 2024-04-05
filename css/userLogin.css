@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Work Sans", sans-serif;
+  }
+  body {
+    background: url("../images/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+  }
+  .logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px 0px 0px 10px;
+    width: 180px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .form-Container {
+    min-width: 500px;
+    max-width: 800px;
+    display: flex;
+    padding: 20px 28px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.419);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-Container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-Container .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .form-Container .form-control label {
+    color: #333;
+    font-weight: 600;
+  }
+  .form-Container .form-control input {
+    padding: 4px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .form-Container .form-control i {
+    position: absolute;
+    color: #333;
+    right: 12px;
+    cursor: pointer;
+    top: 38px;
+    font-weight: 500;
+  }
+  .form-Container .form-control select {
+    padding: 6px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .form-Container .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .form-Container button {
+    padding: 12px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgb(34, 170, 82);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease-in-out;
+  }
+  .form-Container button:hover {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+    background-color: rgb(36, 172, 83);
+  }
+  .form-Container p {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .form-Container p a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.82px;
+    color: #2b107e;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-style: italic;
+  }
+  .passError {
+    font-size: 18px;
+    color: red;
+  }
+  
